@@ -1,0 +1,36 @@
+/* ==========================================================================
+   DARK-MODE.CSS
+   Loaded on every page. Dark mode is a deliberately re-lit version of the
+   store, not an inverted one: warmer near-black surfaces and a brighter
+   wine-rose accent that holds contrast on dark ink. Activated by
+   [data-theme="dark"] on <html>, toggled and persisted via main.js.
+   ========================================================================== */
+
+[data-theme="dark"]{
+  --color-bg: #131218;
+  --color-bg-rgb: 19,18,24;
+  --color-surface: #1D1B24;
+  --color-surface-raised: #24222C;
+  --color-surface-sunken: #0E0D12;
+  --color-ink-panel: #0E0D12;
+  --color-ink-panel-text: #F2EEE3;
+  --color-text: #F2EEE3;
+  --color-text-muted: #A79E8C;
+  --color-accent: #E2637A;
+  --color-accent-rgb: 226,99,122;
+  --color-accent-strong: #EF89A0;
+  --color-accent-contrast: #2B0A10;
+  --color-secondary: var(--color-accent);
+  --color-secondary-rgb: var(--color-accent-rgb);
+  --color-secondary-contrast: var(--color-accent-contrast);
+  --color-border: rgba(242,238,227,0.14);
+  --color-border-strong: rgba(242,238,227,0.28);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.5);
+  --shadow-md: 0 16px 40px -16px rgba(0,0,0,.6);
+  --shadow-lg: 0 34px 80px -22px rgba(0,0,0,.65);
+}
+
+[data-theme="dark"] .theme-toggle .bi-sun-fill{ display:inline-block; }
+[data-theme="dark"] .theme-toggle .bi-moon-stars-fill{ display:none; }
+[data-theme="dark"] .form-text-error{ color:#FF9B85; }
+[data-theme="dark"] .skeleton::after{ background:linear-gradient(90deg, transparent, rgba(255,255,255,.08), transparent); }

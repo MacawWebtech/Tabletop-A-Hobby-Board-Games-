@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop All Games — Tabletop .</title>
+<meta name="description" content="Browse the full Tabletop. catalog: strategy, card, family, puzzle, RPG, party and solo games. Filter by players, age, play time, difficulty and price.">
+<link rel="canonical" href="https://www.tabletop.example/pages/shop.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shop All Games — Tabletop.">
+<meta property="og:description" content="Filter and sort 1,200+ hobby games by category, players, age and more.">
+<meta property="og:url" content="https://www.tabletop.example/pages/shop.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%237A2130%22/><text x=%2216%22 y=%2222%22 font-size=%2218%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22>T</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/dark-mode.css">
+<link rel="stylesheet" href="../assets/css/rtl.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.tabletopandco.example/"},
+    {"@type":"ListItem","position":2,"name":"Shop","item":"https://www.tabletopandco.example/pages/shop.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+
+<header class="site-header">
+  <div class="announce-strip">
+    Free store pickup on every order · <a href="bulk-orders.html">Bulk pricing for schools & clubs →</a>
+  </div>
+  <div class="container-wide">
+    <nav class="navbar-main d-flex align-items-center justify-content-between" aria-label="Primary">
+      <a href="../index.html" class="brand"><img src="../assets/images/logo.png" alt="Tabletop &amp; Co. — Hobby Game Shop" class="brand-logo"></a>
+
+      <div class="main-nav d-none d-xl-flex">
+        <a href="shop.html" class="active">Shop</a>
+        
+        <a href="recommendations.html" class="">Recommendations</a>
+        <a href="game-nights.html" class="">Game Nights</a>
+        <a href="about.html" class="">About</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="contact.html" class="">Contact</a>
+      </div>
+
+      <div class="header-actions">
+        <button class="btn-icon d-none d-md-inline-flex" type="button" aria-label="Search games" data-bs-toggle="modal" data-bs-target="#searchModal">
+          <i class="bi bi-search" aria-hidden="true"></i>
+        </button>
+        <button class="btn-icon theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+          <i class="bi bi-sun-fill" aria-hidden="true"></i>
+        </button>
+        <a href="shop.html" class="btn-icon cart-btn" aria-label="View cart, 0 items">
+          <i class="bi bi-bag" aria-hidden="true"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <a href="shop.html" class="btn btn-primary d-none d-lg-inline-flex">Shop Games</a>
+        <button class="btn-icon d-xl-none" type="button" data-menu-open aria-label="Open menu" aria-haspopup="true">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content panel">
+      <div class="modal-header border-0">
+        <h2 class="h5" id="searchModalLabel">Search games</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <label class="visually-hidden" for="searchInput">Search games</label>
+        <input type="search" id="searchInput" class="form-control" placeholder="Try “Wingspan” or “party games”">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="menu-scrim"></div>
+<div class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-head">
+    <span class="brand" style="color:inherit;"><img src="../assets/images/logo.png" alt="Tabletop &amp; Co." class="brand-logo"></span>
+    <button class="mobile-menu-close" type="button" data-menu-close aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="shop.html">Shop</a>
+    
+    <a href="recommendations.html">Recommendations</a>
+    <a href="game-nights.html">Game Nights</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="mobile-menu-foot">
+    <a href="shop.html" class="btn btn-primary flex-fill">Shop Games</a>
+  </div>
+</div>
+
+<main id="main">
+  <div class="page-hero">
+    <div class="container-wide">
+      <nav class="breadcrumb-token" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a> <i class="bi bi-chevron-right" aria-hidden="true" style="font-size:.7rem;"></i> <span>Shop</span>
+      </nav>
+      <h1 class="mt-3">All Games</h1>
+      <p class="mt-2 max-prose text-muted-token">Every strategy game, card game, family favourite, puzzle and RPG accessory we carry — <span data-result-count>14 games found</span>.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container-wide">
+      <div class="row g-4">
+
+        <!-- Sticky filter trigger (all breakpoints) -->
+        <div class="col-12">
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline flex-fill" type="button" data-filter-open><i class="bi bi-sliders" aria-hidden="true"></i> Filter & Sort</button>
+          </div>
+        </div>
+
+        <!-- Off-canvas filter panel (all breakpoints) -->
+        <div class="mobile-menu" data-filter-panel aria-hidden="true" style="inset-inline-start:auto; inset-inline-end:0;">
+          <div class="mobile-menu-head">
+            <span class="h5 mb-0">Filter & Sort</span>
+            <button class="mobile-menu-close" type="button" data-filter-close aria-label="Close filters"><i class="bi bi-x-lg"></i></button>
+          </div>
+          <div style="overflow-y:auto;">
+            <div class="mb-3">
+              <label class="form-label" for="mSort">Sort by</label>
+              <select class="form-select" id="mSort" data-sort>
+                <option value="featured">Featured</option>
+                <option value="newest">Newest</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating">Best Rated</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="mCategory">Category</label>
+              <select class="form-select" id="mCategory" data-filter="category">
+                <option value="all">All categories</option>
+                <option value="strategy">Strategy</option>
+                <option value="cards">Card Games</option>
+                <option value="family">Family Games</option>
+                <option value="puzzles">Puzzles</option>
+                <option value="rpg">RPG</option>
+                <option value="party">Party Games</option>
+                <option value="solo">Solo Games</option>
+                <option value="accessories">Hobby Accessories</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="mPlayers">Player Count</label>
+              <select class="form-select" id="mPlayers" data-filter="players">
+                <option value="all">Any</option>
+                <option value="1">Solo (1)</option>
+                <option value="2">2 players</option>
+                <option value="3-4">3–4 players</option>
+                <option value="5+">5+ players</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="mAge">Age</label>
+              <select class="form-select" id="mAge" data-filter="age">
+                <option value="all">Any age</option>
+                <option value="kids">Kids</option>
+                <option value="teens">Teens</option>
+                <option value="adults">Adults</option>
+                <option value="all-ages">All Ages</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="mPrice">Price</label>
+              <select class="form-select" id="mPrice" data-filter="price">
+                <option value="all">Any price</option>
+                <option value="under1500">Under ₹1,500</option>
+                <option value="1500-3000">₹1,500 – ₹3,000</option>
+                <option value="3000-5000">₹3,000 – ₹5,000</option>
+                <option value="5000+">₹5,000+</option>
+              </select>
+            </div>
+          </div>
+          <div class="mobile-menu-foot">
+            <button class="btn btn-outline flex-fill" type="button" style="border-color:rgba(255,255,255,.3); color:#fff;" data-clear-filters>Clear</button>
+            <button class="btn btn-primary flex-fill" type="button" data-filter-close>Show Results</button>
+          </div>
+        </div>
+
+        <!-- Product grid -->
+        <div class="col-12">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <p class="text-muted-token mb-0" data-result-count>14 games found</p>
+            <div class="ms-auto d-flex align-items-center gap-2">
+              <label class="form-label mb-0 d-none d-md-block" for="dSort">Sort</label>
+              <select class="form-select" id="dSort" data-sort style="min-width:190px;">
+                <option value="featured">Featured</option>
+                <option value="newest">Newest</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating">Best Rated</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row g-4 reveal is-visible" data-product-grid>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="strategy" data-players="3-4" data-age="all-ages" data-time="30-60" data-difficulty="easy" data-price="1500-3000" data-rating="4.8" data-featured="1" data-added="20260901">
+              <article class="game-card card-relative h-100">
+                <span class="card-badge">NEW</span>
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Cascadia to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-cascadia has-photo"><img class="ph-photo" src="../assets/images/Carcassonne.jpg" alt="Cascadia board game" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Strategy · Tile-laying</p>
+                  <h3 class="card-title">Cascadia</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 1–4</span><span><i class="bi bi-calendar3"></i> 10+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.8 (612)</div>
+                  <div class="card-foot"><span class="card-price">₹2,999</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="strategy" data-players="3-4" data-age="adults" data-time="30-60" data-difficulty="medium" data-price="3000-5000" data-rating="4.9" data-featured="2" data-added="20260905">
+              <article class="game-card card-relative h-100">
+                <span class="card-badge">NEW</span>
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Wingspan to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-wingspan has-photo"><img class="ph-photo" src="../assets/images/wingspans.jpg" alt="Wingspan board game" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Strategy · Engine-building</p>
+                  <h3 class="card-title">Wingspan</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 1–5</span><span><i class="bi bi-calendar3"></i> 10+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.9 (980)</div>
+                  <div class="card-foot"><span class="card-price">₹3,499</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="family" data-players="3-4" data-age="all-ages" data-time="30-60" data-difficulty="easy" data-price="1500-3000" data-rating="4.7" data-featured="3" data-added="20260810">
+              <article class="game-card card-relative h-100">
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Azul to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-azul has-photo"><img class="ph-photo" src="../assets/images/azul.jpg" alt="Azul board game" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Family · Tile drafting</p>
+                  <h3 class="card-title">Azul</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 2–4</span><span><i class="bi bi-calendar3"></i> 8+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.7 (1.2k)</div>
+                  <div class="card-foot"><span class="card-price">₹2,499</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="family" data-players="3-4" data-age="all-ages" data-time="30-60" data-difficulty="easy" data-price="1500-3000" data-rating="4.8" data-featured="4" data-added="20260815">
+              <article class="game-card card-relative h-100">
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Ticket to Ride to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-ticket has-photo"><img class="ph-photo" src="../assets/images/Route-building.jpg" alt="Ticket to Ride board game" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Family · Route-building</p>
+                  <h3 class="card-title">Ticket to Ride</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 2–5</span><span><i class="bi bi-calendar3"></i> 8+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.8 (2.1k)</div>
+                  <div class="card-foot"><span class="card-price">₹2,799</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="party" data-players="5+" data-age="teens" data-time="under30" data-difficulty="easy" data-price="under1500" data-rating="4.7" data-featured="5" data-added="20260702">
+              <article class="game-card card-relative h-100">
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Codenames to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-codenames has-photo"><img class="ph-photo" src="../assets/images/card-games.jpg" alt="Codenames board game" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Party · Word association</p>
+                  <h3 class="card-title">Codenames</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 4–8</span><span><i class="bi bi-calendar3"></i> 14+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.7 (1.6k)</div>
+                  <div class="card-foot"><span class="card-price">₹1,299</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="strategy" data-players="3-4" data-age="all-ages" data-time="30-60" data-difficulty="easy" data-price="1500-3000" data-rating="4.6" data-featured="6" data-added="20260605">
+              <article class="game-card card-relative h-100">
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Carcassonne to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-carcassonne has-photo"><img class="ph-photo" src="../assets/images/Carcassonne.jpg" alt="Carcassonne board game" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Strategy · Tile-laying</p>
+                  <h3 class="card-title">Carcassonne</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 2–5</span><span><i class="bi bi-calendar3"></i> 8+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.6 (1.4k)</div>
+                  <div class="card-foot"><span class="card-price">₹2,199</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="strategy" data-players="3-4" data-age="teens" data-time="60-120" data-difficulty="medium" data-price="3000-5000" data-rating="4.7" data-featured="7" data-added="20260520">
+              <article class="game-card card-relative h-100">
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Catan to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-strategy has-photo"><img class="ph-photo" src="../assets/images/blog7.jpg" alt="Strategy board games" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Strategy · Trading</p>
+                  <h3 class="card-title">Catan</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 3–4</span><span><i class="bi bi-calendar3"></i> 10+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.7 (3.4k)</div>
+                  <div class="card-foot"><span class="card-price">₹3,299</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="strategy" data-players="2" data-age="all-ages" data-time="30-60" data-difficulty="easy" data-price="1500-3000" data-rating="4.6" data-featured="8" data-added="20260615">
+              <article class="game-card card-relative h-100">
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Splendor to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-solo has-photo"><img class="ph-photo" src="../assets/images/thorstenf-gambling-4178462_1920.jpg" alt="Solo game session" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Strategy · Card drafting</p>
+                  <h3 class="card-title">Splendor</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 2–4</span><span><i class="bi bi-calendar3"></i> 10+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.6 (2.0k)</div>
+                  <div class="card-foot"><span class="card-price">₹1,999</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="strategy" data-players="3-4" data-age="teens" data-time="30-60" data-difficulty="medium" data-price="1500-3000" data-rating="4.8" data-featured="9" data-added="20260530">
+              <article class="game-card card-relative h-100">
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Pandemic to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-rpg has-photo"><img class="ph-photo" src="../assets/images/blog8.jpg" alt="Tabletop RPG dice" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Strategy · Cooperative</p>
+                  <h3 class="card-title">Pandemic</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 2–4</span><span><i class="bi bi-calendar3"></i> 8+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.8 (2.6k)</div>
+                  <div class="card-foot"><span class="card-price">₹2,699</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="party" data-players="5+" data-age="all-ages" data-time="30-60" data-difficulty="easy" data-price="1500-3000" data-rating="4.7" data-featured="10" data-added="20260710">
+              <article class="game-card card-relative h-100">
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Dixit to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-party has-photo"><img class="ph-photo" src="../assets/images/blog4.jpg" alt="Friends playing a party game" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Party · Storytelling</p>
+                  <h3 class="card-title">Dixit</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 3–6</span><span><i class="bi bi-calendar3"></i> 8+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.7 (1.9k)</div>
+                  <div class="card-foot"><span class="card-price">₹2,399</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="cards" data-players="3-4" data-age="kids" data-time="under30" data-difficulty="easy" data-price="under1500" data-rating="4.5" data-featured="11" data-added="20260620">
+              <article class="game-card card-relative h-100">
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Sushi Go! to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-cards has-photo"><img class="ph-photo" src="../assets/images/blog2.jpg" alt="Card games" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Cards · Set collection</p>
+                  <h3 class="card-title">Sushi Go!</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 2–5</span><span><i class="bi bi-calendar3"></i> 7+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.5 (1.1k)</div>
+                  <div class="card-foot"><span class="card-price">₹899</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="solo" data-players="2" data-age="all-ages" data-time="under30" data-difficulty="easy" data-price="1500-3000" data-rating="4.6" data-featured="12" data-added="20260410">
+              <article class="game-card card-relative h-100">
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Patchwork to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-puzzles has-photo"><img class="ph-photo" src="../assets/images/solo-games.jpg" alt="Jigsaw puzzle" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Solo/2P · Puzzle</p>
+                  <h3 class="card-title">Patchwork</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 2</span><span><i class="bi bi-calendar3"></i> 8+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.6 (980)</div>
+                  <div class="card-foot"><span class="card-price">₹1,799</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="rpg" data-players="3-4" data-age="adults" data-time="long" data-difficulty="hard" data-price="5000+" data-rating="4.9" data-featured="13" data-added="20260315">
+              <article class="game-card card-relative h-100">
+                <span class="card-badge">HOT</span>
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Gloomhaven Jaws of the Lion to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-rpg has-photo"><img class="ph-photo" src="../assets/images/blog5.jpg" alt="Tabletop RPG dice" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">RPG · Campaign</p>
+                  <h3 class="card-title">Gloomhaven: Jaws of the Lion</h3>
+                  <div class="card-facts"><span><i class="bi bi-people"></i> 1–4</span><span><i class="bi bi-calendar3"></i> 14+</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.9 (740)</div>
+                  <div class="card-foot"><span class="card-price">₹5,999</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4" data-product data-category="accessories" data-players="1" data-age="all-ages" data-time="under30" data-difficulty="easy" data-price="under1500" data-rating="4.4" data-featured="14" data-added="20260901">
+              <article class="game-card card-relative h-100">
+                <button class="wishlist-btn" aria-pressed="false" aria-label="Add Premium Dice Vault to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+                <div class="ph ph-accessories has-photo"><img class="ph-photo" src="../assets/images/blog3.jpg" alt="Board game accessories and dice" loading="lazy"></div>
+                <div class="game-card-body">
+                  <p class="card-cat">Accessories · Storage</p>
+                  <h3 class="card-title">Premium Dice Vault</h3>
+                  <div class="card-facts"><span><i class="bi bi-box-seam"></i> Fits 30+ dice</span></div>
+                  <div class="card-rating"><i class="bi bi-star-fill"></i> 4.4 (210)</div>
+                  <div class="card-foot"><span class="card-price">₹1,199</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+          <p class="text-center text-muted-token mt-4" data-empty-state hidden>No games match those filters yet — try clearing one or two.</p>
+
+          <div class="text-center mt-5">
+            <button class="btn btn-outline" type="button" data-load-more>Load More Games</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container-wide">
+    <div class="footer-top">
+      <div>
+        <span class="brand" style="color:#fff;"><img src="../assets/images/logo.png" alt="Tabletop &amp; Co." class="brand-logo"></span>
+        <p class="mt-3" style="max-width:38ch; color:rgba(244,238,224,.65);">A hobby games store for people who genuinely love to play — strategy, cards, family favourites, puzzles and more.</p>
+        <div class="footer-social">
+          <a href="#" class="btn-icon" style="border-color:rgba(255,255,255,.2); color:#fff;" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="btn-icon" style="border-color:rgba(255,255,255,.2); color:#fff;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="btn-icon" style="border-color:rgba(255,255,255,.2); color:#fff;" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-top-divider"></div>
+      <div class="footer-newsletter">
+        <h4>Get game-night invites & new arrivals</h4>
+        <form data-validate novalidate class="row g-2 mt-1" style="max-width:420px;">
+          <div class="col-8 was-validated-field">
+            <label class="visually-hidden" for="footerEmail2">Email address</label>
+            <input type="email" id="footerEmail2" class="form-control" placeholder="you@email.com" required>
+            <p class="form-text-error">Enter a valid email address.</p>
+          </div>
+          <div class="col-4"><button class="btn btn-primary w-100" type="submit">Join</button></div>
+          <div class="col-12" role="status" data-form-success hidden tabindex="-1" style="color:#8fd6bd; font-size:.86rem;">You're on the list — welcome aboard!</div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All Games</a></li>
+          <li><a href="shop.html?category=strategy">Strategy</a></li>
+          <li><a href="shop.html?category=cards">Card Games</a></li>
+          <li><a href="shop.html?category=family">Family</a></li>
+          <li><a href="shop.html?category=puzzles">Puzzles</a></li>
+          <li><a href="shop.html?category=rpg">RPG</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="recommendations.html">Recommendations</a></li>
+          <li><a href="game-nights.html">Game Nights</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="shop.html?sort=newest">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="bulk-orders.html">Bulk Orders</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Shipping</a></li>
+          <li><a href="contact.html">Returns</a></li>
+          <li><a href="contact.html">FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Tabletop· 14 Kesari Street, Mylapore, Chennai · Mon–Sat 10:30am–8pm</span>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<button class="btn-icon to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/parallax.js"></script>
+<script src="../assets/js/shop.js"></script>
+</body>
+</html>

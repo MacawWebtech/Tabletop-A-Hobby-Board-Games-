@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabletop — Home (Layout 2): Pull Up a Chair</title>
+<meta name="description" content="An alternate Tabletop . homepage: a centered, community-first layout built around this week's spotlight game, browsing by type, and what's happening at the tables.">
+<link rel="canonical" href="https://www.tabletop.example/home-2.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tabletop — Home (Layout 2)">
+<meta property="og:description" content="A community-first take on the Tabletop . homepage — this week's spotlight game, browse by type, new arrivals and what's on at the tables.">
+<meta property="og:image" content="https://www.tabletop.example/assets/images/og-cover.jpg">
+<meta property="og:url" content="https://www.tabletop.example/home-2.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%237A2130%22/><text x=%2216%22 y=%2222%22 font-size=%2218%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22sans-serif%22>T</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/dark-mode.css">
+<link rel="stylesheet" href="assets/css/rtl.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Tabletop & Co.",
+  "description": "A hobby and board games store selling strategy games, card games, family games, puzzles, RPG accessories and gaming essentials.",
+  "url": "https://www.tabletopandco.example/home-2.html",
+  "telephone": "+91-44-4000-1234",
+  "priceRange": "₹₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "14 Kesari Street, Mylapore",
+    "addressLocality": "Chennai",
+    "addressRegion": "TN",
+    "postalCode": "600004",
+    "addressCountry": "IN"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- ============================== HEADER ============================== -->
+<header class="site-header">
+  <div class="announce-strip">
+    Home (Layout 2) — an alternate homepage · <a href="index.html">View the original homepage →</a>
+  </div>
+  <div class="container-wide">
+    <nav class="navbar-main d-flex align-items-center justify-content-between" aria-label="Primary">
+      <a href="index.html" class="brand"><img src="assets/images/logo.png" alt="Tabletop &amp; Co. — Hobby Game Shop" class="brand-logo"></a>
+
+      <div class="main-nav d-none d-xl-flex">
+        <a href="pages/shop.html">Shop</a>
+    
+        <a href="pages/recommendations.html">Recommendations</a>
+        <a href="pages/game-nights.html">Game Nights</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/blog.html">Blog</a>
+        <a href="pages/contact.html">Contact</a>
+      </div>
+
+      <div class="header-actions">
+        <button class="btn-icon d-none d-md-inline-flex" type="button" aria-label="Search games" data-bs-toggle="modal" data-bs-target="#searchModal">
+          <i class="bi bi-search" aria-hidden="true"></i>
+        </button>
+        <button class="btn-icon theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">
+          <i class="bi bi-moon-stars-fill" aria-hidden="true"></i>
+          <i class="bi bi-sun-fill" aria-hidden="true"></i>
+        </button>
+        <a href="pages/shop.html" class="btn-icon cart-btn" aria-label="View cart, 0 items">
+          <i class="bi bi-bag" aria-hidden="true"></i>
+          <span class="cart-count">0</span>
+        </a>
+        <a href="pages/shop.html" class="btn btn-primary d-none d-lg-inline-flex">Shop Games</a>
+        <button class="btn-icon d-xl-none" type="button" data-menu-open aria-label="Open menu" aria-haspopup="true">
+          <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Search modal (simple demo) -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content panel">
+      <div class="modal-header border-0">
+        <h2 class="h5" id="searchModalLabel">Search games</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <label class="visually-hidden" for="searchInput">Search games</label>
+        <input type="search" id="searchInput" class="form-control" placeholder="Try “Wingspan” or “party games”">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="menu-scrim"></div>
+<div class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu-head">
+    <span class="brand" style="color:inherit;"><img src="assets/images/logo.png" alt="Tabletop &amp; Co." class="brand-logo"></span>
+    <button class="mobile-menu-close" type="button" data-menu-close aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="pages/shop.html">Shop</a>
+ 
+    <a href="pages/recommendations.html">Recommendations</a>
+    <a href="pages/game-nights.html">Game Nights</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/blog.html">Blog</a>
+    <a href="pages/contact.html">Contact</a>
+  </nav>
+  <div class="mobile-menu-foot">
+    <a href="pages/shop.html" class="btn btn-primary flex-fill">Shop Games</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- ============================== HERO (centered, stacked) ============================== -->
+  <section class="hero pb-0">
+    <div class="container-x">
+      <div class="hero-stack reveal">
+        <span class="eyebrow justify-content-center">Pull up a chair</span>
+        <h1 class="section-heading mt-3" style="font-size:clamp(2.4rem,6vw,4.2rem);">Every great night starts<br>with the right game.</h1>
+        <p class="mt-3 mx-auto" style="max-width:56ch; color:var(--color-text-muted);">One curated pick each week, a shop floor organised by how you actually want to play, and a table waiting for you every Saturday. This is the other way to see Tabletop & Co.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+          <a href="pages/shop.html" class="btn btn-primary">Explore Games</a>
+          <a href="pages/game-nights.html" class="btn-ghost-link">See This Week's Table <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="stat-row">
+          <div><div class="num">1,200+</div><div class="lbl">Games in store</div></div>
+          <div><div class="num">40+</div><div class="lbl">Game nights a year</div></div>
+          <div><div class="num">4.8/5</div><div class="lbl">Player rating</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ========================= THIS WEEK'S SPOTLIGHT (stacked, not split) ========================= -->
+  <section class="section">
+    <div class="container-x" style="max-width:820px;">
+      <div class="gotw gotw-grid--stacked reveal">
+        <div class="gotw-grid gotw-grid--stacked">
+          <div class="gotw-media ph ph-cascadia has-photo">
+            <span class="gotw-tag">THIS WEEK'S SPOTLIGHT</span>
+            <img class="ph-photo" src="assets/images/Carcassonne.jpg" alt="Cascadia board game" loading="lazy">
+          </div>
+          <div class="gotw-body">
+            <span class="eyebrow justify-content-center" style="color:var(--color-accent-strong)">Week spotlight</span>
+            <h2 class="section-heading mt-3">Cascadia</h2>
+            <p class="mt-3 mx-auto" style="max-width:56ch; color:rgba(244,238,224,.78)">Lay habitat tiles, place wildlife tokens, and build the most harmonious slice of the Pacific Northwest at your table. Quiet, puzzly, and endlessly replayable — a favourite with players who want strategy without confrontation.</p>
+
+            <div class="gotw-meta">
+              <div class="gotw-meta-item"><span class="lbl">PLAYERS</span><span class="val">1–4</span></div>
+              <div class="gotw-meta-item"><span class="lbl">AGE</span><span class="val">10+</span></div>
+              <div class="gotw-meta-item"><span class="lbl">PLAY TIME</span><span class="val">30–45 min</span></div>
+              <div class="gotw-meta-item"><span class="lbl">DIFFICULTY</span><span class="val diff-dots"><span class="filled"></span><span></span><span></span></span></div>
+              <div class="gotw-meta-item"><span class="lbl">RATING</span><span class="val">4.8 <i class="bi bi-star-fill text-accent" aria-hidden="true"></i></span></div>
+            </div>
+
+            <div class="gotw-highlights">
+              <div class="gotw-highlight"><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Every tile-and-token combination scores differently, so no two boards ever look alike.</span></div>
+              <div class="gotw-highlight"><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Five wildlife-scoring cards per game keep even veteran players adjusting strategy.</span></div>
+              <div class="gotw-highlight"><i class="bi bi-check-circle-fill" aria-hidden="true"></i><span>Calm, no-conflict play that's equally at home in a quiet solo session or a full table.</span></div>
+            </div>
+
+            <div class="gotw-price-row">
+              <span class="gotw-price">₹2,999</span>
+              <button class="btn btn-primary" data-add-to-cart><i class="bi bi-bag-plus" aria-hidden="true"></i> Add to Cart</button>
+              <a href="pages/product-details.html" class="btn-ghost-link">See full details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= BROWSE BY TYPE (filmstrip) ========================= -->
+  <section class="section pt-0" id="categories">
+    <div class="container-wide">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Browse by type</span>
+          <h2 class="section-heading mt-3">Scroll through<br>the whole shop floor.</h2>
+        </div>
+        <a href="pages/shop.html" class="btn-ghost-link">Explore All Games <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+      </div>
+
+      <div class="hscroll reveal">
+        <a href="pages/shop.html?category=strategy" class="exp-item exp-item--1 exp-item-wide">
+          <span class="exp-arrow"><i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+          <span class="exp-name">Strategy</span><span class="exp-count">210 games</span>
+        </a>
+        <a href="pages/shop.html?category=cards" class="exp-item exp-item--2 exp-item-wide">
+          <span class="exp-arrow"><i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+          <span class="exp-name">Card Games</span><span class="exp-count">140 games</span>
+        </a>
+        <a href="pages/shop.html?category=family" class="exp-item exp-item--3 exp-item-wide">
+          <span class="exp-arrow"><i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+          <span class="exp-name">Family Games</span><span class="exp-count">180 games</span>
+        </a>
+        <a href="pages/shop.html?category=puzzles" class="exp-item exp-item--4 exp-item-wide">
+          <span class="exp-arrow"><i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+          <span class="exp-name">Puzzles</span><span class="exp-count">95 games</span>
+        </a>
+        <a href="pages/shop.html?category=rpg" class="exp-item exp-item--5 exp-item-wide">
+          <span class="exp-arrow"><i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+          <span class="exp-name">RPG</span><span class="exp-count">65 games</span>
+        </a>
+        <a href="pages/shop.html?category=party" class="exp-item exp-item--6 exp-item-wide">
+          <span class="exp-arrow"><i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+          <span class="exp-name">Party Games</span><span class="exp-count">120 games</span>
+        </a>
+        <a href="pages/shop.html?category=solo" class="exp-item exp-item--7 exp-item-wide">
+          <span class="exp-arrow"><i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+          <span class="exp-name">Solo Games</span><span class="exp-count">40 games</span>
+        </a>
+        <a href="pages/shop.html?category=accessories" class="exp-item exp-item--8 exp-item-wide">
+          <span class="exp-arrow"><i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+          <span class="exp-name">Hobby Accessories</span><span class="exp-count">75 items</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= JUST LANDED (static grid, not scroller) ========================= -->
+  <section class="section pt-0">
+    <div class="container-wide">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Just landed</span>
+          <h2 class="section-heading mt-3">New Arrivals</h2>
+        </div>
+        <a href="pages/shop.html?sort=newest" class="btn-ghost-link">See All New Arrivals <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+      </div>
+
+      <div class="row g-4 reveal">
+        <div class="col-6 col-lg-3">
+          <article class="game-card card-relative h-100">
+            <span class="card-badge">NEW</span>
+            <button class="wishlist-btn" aria-pressed="false" aria-label="Add Wingspan to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+            <div class="ph ph-wingspan has-photo"><img class="ph-photo" src="assets/images/wingspans.jpg" alt="Wingspan board game" loading="lazy"></div>
+            <div class="game-card-body">
+              <p class="card-cat">Strategy · Engine-building</p>
+              <h3 class="card-title">Wingspan</h3>
+              <div class="card-facts"><span><i class="bi bi-people" aria-hidden="true"></i> 1–5</span><span><i class="bi bi-calendar3" aria-hidden="true"></i> 10+</span></div>
+              <div class="card-rating"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.9 (980)</div>
+              <div class="card-foot"><span class="card-price">₹3,499</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="game-card card-relative h-100">
+            <button class="wishlist-btn" aria-pressed="false" aria-label="Add Azul to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+            <div class="ph ph-azul has-photo"><img class="ph-photo" src="assets/images/azul.jpg" alt="Azul board game" loading="lazy"></div>
+            <div class="game-card-body">
+              <p class="card-cat">Family · Tile drafting</p>
+              <h3 class="card-title">Azul</h3>
+              <div class="card-facts"><span><i class="bi bi-people" aria-hidden="true"></i> 2–4</span><span><i class="bi bi-calendar3" aria-hidden="true"></i> 8+</span></div>
+              <div class="card-rating"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.7 (1.2k)</div>
+              <div class="card-foot"><span class="card-price">₹2,499</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="game-card card-relative h-100">
+            <span class="card-badge">NEW</span>
+            <button class="wishlist-btn" aria-pressed="false" aria-label="Add Ticket to Ride to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+            <div class="ph ph-ticket has-photo"><img class="ph-photo" src="assets/images/Route-building.jpg" alt="Ticket to Ride board game" loading="lazy"></div>
+            <div class="game-card-body">
+              <p class="card-cat">Family · Route-building</p>
+              <h3 class="card-title">Ticket to Ride</h3>
+              <div class="card-facts"><span><i class="bi bi-people" aria-hidden="true"></i> 2–5</span><span><i class="bi bi-calendar3" aria-hidden="true"></i> 8+</span></div>
+              <div class="card-rating"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.8 (2.1k)</div>
+              <div class="card-foot"><span class="card-price">₹2,799</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+            </div>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="game-card card-relative h-100">
+            <button class="wishlist-btn" aria-pressed="false" aria-label="Add Codenames to wishlist"><i class="bi bi-dice-6" aria-hidden="true"></i></button>
+            <div class="ph ph-codenames has-photo"><img class="ph-photo" src="assets/images/card-games.jpg" alt="Codenames board game" loading="lazy"></div>
+            <div class="game-card-body">
+              <p class="card-cat">Party · Word association</p>
+              <h3 class="card-title">Codenames</h3>
+              <div class="card-facts"><span><i class="bi bi-people" aria-hidden="true"></i> 4–8</span><span><i class="bi bi-calendar3" aria-hidden="true"></i> 14+</span></div>
+              <div class="card-rating"><i class="bi bi-star-fill" aria-hidden="true"></i> 4.7 (1.6k)</div>
+              <div class="card-foot"><span class="card-price">₹1,299</span><button class="btn btn-dark btn-sm" data-add-to-cart>Add</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= COMMUNITY: table + testimonials together ========================= -->
+  <section class="section pt-0">
+    <div class="container-wide">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">At the tables</span>
+          <h2 class="section-heading mt-3">More than games.<br>A place to play, meet, and belong.</h2>
+        </div>
+        <a href="pages/game-nights.html" class="btn btn-outline">View Game Nights</a>
+      </div>
+
+      <div class="community-card reveal">
+        <div class="row g-0">
+          <div class="col-lg-5">
+            <div class="community-media ph ph-community has-photo">
+              <img class="ph-photo" src="https://images.unsplash.com/photo-1660807304251-9e2012336d19?w=1200&q=80&fit=crop&auto=format" alt="Players gathered for game night" loading="lazy">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="p-4 p-lg-5">
+              <span class="eyebrow">Upcoming game night</span>
+              <h3 class="h2 mt-3">Saturday Strategy Table</h3>
+              <ul class="event-detail-list">
+                <li><i class="bi bi-calendar-event" aria-hidden="true"></i> Saturday, 20 September · 6:00 PM – 9:00 PM</li>
+                <li><i class="bi bi-geo-alt" aria-hidden="true"></i> Tabletop & Co. — Mylapore, Chennai</li>
+                <li><i class="bi bi-controller" aria-hidden="true"></i> Featured game: <strong>Cascadia</strong> &amp; <strong>Wingspan</strong></li>
+                <li><i class="bi bi-person-check" aria-hidden="true"></i> <span class="seat-pill">9 of 24 seats left</span></li>
+              </ul>
+              <a href="pages/game-nights.html" class="btn btn-dark mt-3">Reserve a Seat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-1 reveal">
+        <div class="col-md-4">
+          <div class="panel p-4 h-100 d-flex flex-column">
+            <div class="rating-stars mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="mb-4">"The Saturday game nights are the best thing about my week. I've made real friends over a Ticket to Ride board — not something I expected from a games shop."</p>
+            <div class="mt-auto">
+              <p class="fw-semibold mb-0">Karthik V.</p>
+              <p class="text-muted-token small mb-0">Favourite game: Ticket to Ride</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel p-4 h-100 d-flex flex-column">
+            <div class="rating-stars mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <p class="mb-4">"I walked in knowing nothing about board games beyond Monopoly. Devika spent twenty minutes asking about movie nights with my partner and handed me Azul."</p>
+            <div class="mt-auto">
+              <p class="fw-semibold mb-0">Priya S.</p>
+              <p class="text-muted-token small mb-0">Favourite game: Azul</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel p-4 h-100 d-flex flex-column">
+            <div class="rating-stars mb-3"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+            <p class="mb-4">"We ordered forty puzzles for a school fundraiser and they handled the whole bulk order over email. Delivered a week early with a gift note for each classroom."</p>
+            <div class="mt-auto">
+              <p class="fw-semibold mb-0">St. Aloysius Primary</p>
+              <p class="text-muted-token small mb-0">Bulk order customer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= CLOSING CTA BAND ========================= -->
+  <section class="section pt-0">
+    <div class="container-wide">
+      <div class="cta-band reveal">
+        <span class="eyebrow justify-content-center" style="color:var(--color-accent-strong)">Play · Discover · Connect</span>
+        <h2 class="section-heading mt-3">Come play with us.</h2>
+        <p class="mt-3 mx-auto" style="max-width:52ch; color:rgba(244,238,224,.75);">Whether you know exactly what you want or need us to point the way, there's a seat and a shelf for you at Tabletop & Co.</p>
+        <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+          <a href="pages/shop.html" class="btn btn-primary">Explore Games</a>
+          <a href="pages/recommendations.html" class="btn-ghost-link">Find Your Game <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="site-footer">
+  <div class="container-wide">
+    <div class="footer-top">
+      <div>
+        <span class="brand" style="color:#fff;"><img src="assets/images/logo.png" alt="Tabletop &amp; Co." class="brand-logo"></span>
+        <p class="mt-3" style="max-width:38ch; color:rgba(244,238,224,.65);">A hobby games store for people who genuinely love to play — strategy, cards, family favourites, puzzles and more.</p>
+        <div class="footer-social">
+          <a href="#" class="btn-icon" style="border-color:rgba(255,255,255,.2); color:#fff;" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="btn-icon" style="border-color:rgba(255,255,255,.2); color:#fff;" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="btn-icon" style="border-color:rgba(255,255,255,.2); color:#fff;" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-top-divider"></div>
+      <div class="footer-newsletter">
+        <h4>Get game-night invites & new arrivals</h4>
+        <form data-validate novalidate class="row g-2 mt-1" style="max-width:420px;">
+          <div class="col-8 was-validated-field">
+            <label class="visually-hidden" for="footerEmail">Email address</label>
+            <input type="email" id="footerEmail" class="form-control" placeholder="you@email.com" required>
+            <p class="form-text-error">Enter a valid email address.</p>
+          </div>
+          <div class="col-4"><button class="btn btn-primary w-100" type="submit">Join</button></div>
+          <div class="col-12" role="status" data-form-success hidden tabindex="-1" style="color:#8fd6bd; font-size:.86rem;">You're on the list — welcome aboard!</div>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="pages/shop.html">All Games</a></li>
+          <li><a href="pages/shop.html?category=strategy">Strategy</a></li>
+          <li><a href="pages/shop.html?category=cards">Card Games</a></li>
+          <li><a href="pages/shop.html?category=family">Family</a></li>
+          <li><a href="pages/shop.html?category=puzzles">Puzzles</a></li>
+          <li><a href="pages/shop.html?category=rpg">RPG</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Discover</h4>
+        <ul>
+          <li><a href="pages/recommendations.html">Recommendations</a></li>
+          <li><a href="pages/game-nights.html">Game Nights</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="pages/shop.html?sort=newest">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="pages/bulk-orders.html">Bulk Orders</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="pages/contact.html">Shipping</a></li>
+          <li><a href="pages/contact.html">Returns</a></li>
+          <li><a href="pages/contact.html">FAQs</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Tabletop · 14 Kesari Street, Mylapore, Chennai · Mon–Sat 10:30am–8pm</span>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<button class="btn-icon to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/parallax.js"></script>
+</body>
+</html>

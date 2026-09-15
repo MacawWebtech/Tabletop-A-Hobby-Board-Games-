@@ -1,0 +1,46 @@
+/* ==========================================================================
+   RTL.CSS — loaded only when <html dir="rtl"> (Arabic / Hebrew)
+   Most spacing already uses logical properties (margin-inline, inset-inline,
+   padding-inline) in style.css, so this file only fixes the handful of rules
+   that reference physical directions, plus icon mirroring.
+   ========================================================================== */
+
+[dir="rtl"]{ text-align:right; }
+[dir="rtl"] .text-lg-start{ text-align:right !important; }
+[dir="rtl"] .text-lg-end{ text-align:left !important; }
+
+/* Icons that imply direction of travel should flip */
+[dir="rtl"] .bi-arrow-right::before{ content:"\F12F"; } /* swap to arrow-left glyph */
+[dir="rtl"] .bi-arrow-up-right::before{ content:"\F138"; }
+[dir="rtl"] .flip-rtl{ transform:scaleX(-1); }
+
+/* Off-canvas mobile menu slides from the opposite edge */
+[dir="rtl"] .mobile-menu{ inset-inline-start:auto; }
+
+/* Brand mark tilt mirrors direction */
+[dir="rtl"] .brand .brand-mark{ transform:rotate(6deg); }
+
+/* Hero float cards mirror position along the inline axis automatically via
+   inset-inline in style.css — only the decorative rotation needs flipping */
+[dir="rtl"] .hero-float-1{ transform:rotate(2deg); }
+[dir="rtl"] .hero-float-2{ transform:rotate(-2deg); }
+
+/* Gutter fix for horizontal scrollers so the natural RTL scroll start matches
+   the first visible card */
+[dir="rtl"] .hscroll{ scroll-snap-type:x mandatory; }
+
+/* Breadcrumb separators */
+[dir="rtl"] .breadcrumb-token i.bi-chevron-right::before{ content:"\F284"; }
+
+/* Table of contents left rule becomes a right rule */
+[dir="rtl"] .table-of-contents{ border-inline-start:2px solid var(--color-border); }
+
+/* Form check + radio alignment already logical via padding-inline in Bootstrap 5.3+,
+   this is a safety net for older overrides */
+[dir="rtl"] .form-check{ padding-inline-start:1.5em; padding-inline-end:0; }
+[dir="rtl"] .form-check .form-check-input{ margin-inline-start:-1.5em; margin-inline-end:0; }
+
+/* Quantity stepper & filter chips read right-to-left naturally; only the
+   difficulty dice row needs an explicit reversal since it's a flex row
+   representing sequence, not text */
+[dir="rtl"] .diff-dots{ flex-direction:row-reverse; }
