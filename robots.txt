@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /pages/404.html
+Disallow: /pages/order.html
+
+Sitemap: https://www.tabletopgames.example/sitemap.xml
